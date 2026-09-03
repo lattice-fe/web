@@ -161,7 +161,7 @@ export default function LandingPage() {
       <footer style={{ borderTop: "1px solid var(--border)", padding: "20px 24px", display: "flex", flexWrap: "wrap", gap: 12, alignItems: "center", justifyContent: "space-between", fontSize: 13, color: "var(--dim)" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
           <Mark size={16} />
-          <span>lattice — local-first file explorer · AGPL-3.0</span>
+          <span>lattice — an agentic workspace for your filesystem · AGPL-3.0</span>
         </div>
         <div style={{ display: "flex", gap: 20, fontFamily: "var(--mono)" }}>
           <a href={REPO} target="_blank" rel="noreferrer" style={{ color: "var(--dim)", textDecoration: "none" }}>GitHub</a>
