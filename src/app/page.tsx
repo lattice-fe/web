@@ -46,6 +46,10 @@ function Mark({ size = 22 }: { size?: number }) {
   );
 }
 
+// basePath prefix for static assets referenced via plain <img> (Next only
+// auto-prefixes its own /_next assets, not these). Empty on root hosts (CF Pages).
+const BP = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function LandingPage() {
   const [i, setI] = useState(0);
   const n = SHOTS.length;
@@ -124,7 +128,7 @@ export default function LandingPage() {
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
                     key={s.src}
-                    src={s.src}
+                    src={BP + s.src}
                     alt={s.caption}
                     draggable={false}
                     onError={(e) => { (e.currentTarget as HTMLImageElement).style.opacity = "0"; }}
