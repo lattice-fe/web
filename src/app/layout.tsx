@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 import './lattice.css';
 
-// TODO: set to the real deployed origin so link previews (Twitter/WhatsApp) resolve /og.png.
-const SITE_URL = 'https://lattice.fyi';
+// Deployed origin — used to build absolute og:image URLs for link previews.
+const SITE_URL = 'https://lattice-fe.github.io/web';
 
 const TITLE = 'Lattice — An agentic workspace for your filesystem';
 const DESC =
